@@ -22,6 +22,7 @@
   margin-top: 42px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   border: 0.4px solid grey;
+  width: 35%;
 }
 .slider h1 {
   font-size: 32px;
@@ -134,9 +135,18 @@ footer {
 }
 /* akhir footer */
 
+@media (min-width: 476px) {
+  .slider img {
+    width: 30%;
+  }
+}
+
 @media (min-width: 576px) {
   .slider {
     height: 400px !important;
+  }
+  .slider img {
+    width: 30%;
   }
 }
 
@@ -163,10 +173,16 @@ footer {
   .slider h1 {
     font-size: 40px;
   }
+  .slider img {
+    width: 25%;
+  }
 }
 
 @media (min-width: 992px) {
   .slider {
     height: 500px !important;
+  }
+  .slider img {
+    width: 25%;
   }
 }
