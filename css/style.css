@@ -1,23 +1,71 @@
+/* button */
+.button {
+  margin-top: 25px !important;
+  background-color: #008cba;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
 /* fonts google */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+body {
+  background-color: white;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* page loading */
+
 /* navbar */
 .brand-logo {
-  font-size: 17px !important;
+  font-size: 18px !important;
   font-family: Poppins, sans-serif;
-  font-weight: 600;
+  font-weight: 550;
+}
+.brand-logo .logo {
+  color: #008cba;
+  font-size: 30px;
 }
 
 .nav-wrapper ul li a {
   font-family: Poppins, sans-serif;
+  font-size: 15px;
+}
+
+.sidenav {
+  padding: 56px 0;
+}
+
+.sidenav label {
+  padding-left: 20px;
+  color: white;
 }
 
 .sidenav li a {
   font-family: Poppins, sans-serif;
+  color: white;
 }
-/* akhir navbar */
 
 /* slider */
+
+.slider {
+  height: 375px !important;
+}
 .slider img {
   margin-top: 42px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
@@ -25,17 +73,20 @@
   width: 35%;
 }
 .slider h1 {
-  font-size: 32px;
+  margin-top: 15px;
+  font-size: 22px;
   font-family: Poppins, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .slider p {
   margin-top: -15px !important;
+  margin-bottom: auto;
   font-weight: 500;
   font-family: Poppins, sans-serif;
-  font-size: 16px;
+  font-size: 13px;
+  font-style: italic;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 .parallax-container {
@@ -43,22 +94,17 @@
 }
 
 .parallax img {
-  filter: grayscale(1);
-  opacity: 0.5 !important;
+  filter: grayscale(0.9);
+  opacity: 0.9 !important;
 }
 
-/* icons sosial */
-.home__social-icon {
-  color: black;
+/* icons sosial di slider */
+.slider .home__social-icon .bx {
+  margin-top: 10px;
+  width: 20px;
+  color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-
-.home__social-icon .bx {
-  width: 30px;
-}
-/* akhir icons sosial */
-
-/* akhir slider */
 
 /* About */
 .about h3 {
@@ -70,7 +116,6 @@
   font-family: Poppins, sans-serif;
   font-size: 16px;
 }
-/* Akhir About */
 
 /* skill */
 .skill h3 {
@@ -85,14 +130,19 @@
 }
 
 .skill img {
-  width: 50px;
-  height: 50px;
+  width: 44px;
+  height: 44px;
   opacity: 0.9;
 }
-/* akhir skill */
+
+/* .thumb {
+  width: 200px;
+  float: left;
+  border: 1px solid;
+  box-sizing: border-box;
+} */
 
 /* portfolio */
-
 .portfolio h3 {
   font-family: Poppins, sans-serif;
   font-weight: bold;
@@ -104,7 +154,10 @@
   font-family: Poppins, sans-serif;
   font-size: 15px;
 }
-/* akhir portfolio */
+.portfolio .card-panel,
+img {
+  border-radius: 15px;
+}
 
 /* kontaks */
 .contact h4 {
@@ -125,7 +178,11 @@ ul {
 .contact h4 {
   font-size: 20px;
 }
-/* akhir kontaks */
+
+.contact .card-panel,
+.collection {
+  border-radius: 15px;
+}
 
 /* footer */
 section,
@@ -133,9 +190,18 @@ footer {
   padding: 20px 0;
   font-family: Poppins, sans-serif;
 }
-/* akhir footer */
 
-@media (min-width: 476px) {
+footer .home__social-icon .bx {
+  margin-top: 10px;
+  width: 40px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 475px) {
+  .slider {
+    height: 375px !important;
+  }
   .slider img {
     width: 30%;
   }
@@ -152,7 +218,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .slider {
-    height: 450px !important;
+    height: 470px !important;
   }
   .slider p {
     font-size: 18px;
@@ -171,7 +237,7 @@ footer {
     font-size: 32px;
   }
   .slider h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
   .slider img {
     width: 25%;
