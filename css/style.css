@@ -49,7 +49,7 @@ body {
 
 /* mobile nav */
 .logo {
-  margin-top: 4px;
+  margin-top: 1px;
 }
 
 .sidenav {
@@ -69,9 +69,8 @@ body {
 }
 
 .sidenav img {
-  margin-top: -80px;
-  padding-left: 70px;
-  margin-bottom: 5px;
+  margin-top: -70px;
+  padding-left: 80px;
 }
 
 /* slider */
@@ -213,7 +212,7 @@ footer .home__social-icon .bx {
     width: 30%;
   }
   .logo {
-    margin-top: 4px;
+    margin-top: 1px;
   }
 }
 
@@ -225,13 +224,13 @@ footer .home__social-icon .bx {
     width: 30%;
   }
   .logo {
-    margin-top: 6px;
+    margin-top: 4px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .logo {
-    margin-top: 9px;
+    margin-top: 5px;
   }
   .slider {
     height: 470px !important;
