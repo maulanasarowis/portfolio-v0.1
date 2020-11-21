@@ -24,12 +24,11 @@ body {
   background-color: white;
 }
 
+/* dark mode */
 .dark-mode {
   background-color: black;
   color: white;
 }
-
-/* page loading */
 
 /* navbar */
 .brand-logo {
@@ -37,14 +36,20 @@ body {
   font-family: Poppins, sans-serif;
   font-weight: 550;
 }
-.brand-logo .logo {
-  color: #008cba;
-  font-size: 30px;
-}
 
 .nav-wrapper ul li a {
   font-family: Poppins, sans-serif;
   font-size: 15px;
+}
+.nav-wrapper label {
+  color: white;
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+}
+
+/* mobile nav */
+.logo {
+  margin-top: 4px;
 }
 
 .sidenav {
@@ -54,6 +59,8 @@ body {
 .sidenav label {
   padding-left: 20px;
   color: white;
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
 }
 
 .sidenav li a {
@@ -61,8 +68,13 @@ body {
   color: white;
 }
 
-/* slider */
+.sidenav img {
+  margin-top: -80px;
+  padding-left: 70px;
+  margin-bottom: 5px;
+}
 
+/* slider */
 .slider {
   height: 375px !important;
 }
@@ -89,6 +101,8 @@ body {
   font-style: italic;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
+
+/* parallax */
 .parallax-container {
   height: 20%;
 }
@@ -134,13 +148,6 @@ body {
   height: 44px;
   opacity: 0.9;
 }
-
-/* .thumb {
-  width: 200px;
-  float: left;
-  border: 1px solid;
-  box-sizing: border-box;
-} */
 
 /* portfolio */
 .portfolio h3 {
@@ -205,6 +212,9 @@ footer .home__social-icon .bx {
   .slider img {
     width: 30%;
   }
+  .logo {
+    margin-top: 4px;
+  }
 }
 
 @media (min-width: 576px) {
@@ -214,9 +224,15 @@ footer .home__social-icon .bx {
   .slider img {
     width: 30%;
   }
+  .logo {
+    margin-top: 6px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .logo {
+    margin-top: 9px;
+  }
   .slider {
     height: 470px !important;
   }
